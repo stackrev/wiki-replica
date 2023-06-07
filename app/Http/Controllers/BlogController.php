@@ -15,7 +15,7 @@ class BlogController extends Controller
         // $this->client = ClientBuilder::create()->setElasticCloudId(env('ELASTICSEARCH_COULD_ID'))->setBasicAuthentication(env('ELASTICSEARCH_USERNAME'), env('ELASTICSEARCH_PASSWORD'))->build();
         // $this->index_name = 'nations_info_index';
         $this->client = ClientBuilder::create()->setHosts(['localhost:9200'])->build();
-        $this->index_name = 'tutorial';
+        $this->index_name = 'nation_info';
     }
     public function home (Request $request) {
         $q = $request->get('q');
