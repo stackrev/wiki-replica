@@ -17,6 +17,9 @@
           <li class="nav-item">
             <a class="btn btn-primary" aria-current="page" href="/post/new">Add Record</a>
           </li>
+          <li class="nav-item" style="padding-left:20">
+            <a class="btn btn-secondary" aria-current="page" target=".blank" href="http://localhost:5601/app/discover#/?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(),filters:!(),index:'99d60310-05f5-11ee-815f-55d99dfb45cd',interval:auto,query:(language:kuery,query:''),sort:!())">Kibana</a>
+          </li>
         </ul>
         @auth
           <span>{{ Auth::user()->name }}</span>
